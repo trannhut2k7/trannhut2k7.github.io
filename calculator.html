@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Calculator.css">
+    <script src="Calculator.js"></script>
+</head>
+<body>
+    <div class = "main">
+        <div class = "div_button">
+            <form>
+                <input type="text" id = "Screen">
+                <input type="button" class = "button" value = "C" onclick = "clr()">
+            </form>
+            <form>
+                <input type="button" class = "button" value = "7" onclick = "Onclick('7')">
+                <input type="button" class = "button" value = "8" onclick = "Onclick('8')">
+                <input type="button" class = "button" value = "9" onclick = "Onclick('9')">
+                <input type="button" class = "button" value = "/" onclick = "Onclick('/')">
+            </form>
+            <form>
+                <input type="button" class = "button" value = "4" onclick = "Onclick('4')">
+                <input type="button" class = "button" value = "5" onclick = "Onclick('5')">
+                <input type="button" class = "button" value = "6" onclick = "Onclick('6')">
+                <input type="button" class = "button" value = "*" onclick = "Onclick('*')">
+            </form>
+            <form>
+                <input type="button" class = "button" value = "1" onclick = "Onclick('1')">
+                <input type="button" class = "button" value = "2" onclick = "Onclick('2')">
+                <input type="button" class = "button" value = "3" onclick = "Onclick('3')">
+                <input type="button" class = "button" value = "-" onclick = "Onclick('-')">
+            </form>
+            <form>
+                <input type="button" class = "button" value = "0" onclick = "Onclick('0')">
+                <input type="button" class = "button" value = "." onclick = "Onclick('.')">
+                <input type="button" class = "button" value = "=" onclick = "Calculate()">
+                <input type="button" class = "button" value = "+" onclick = "Onclick('+')">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
