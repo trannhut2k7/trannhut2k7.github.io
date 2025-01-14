@@ -4,42 +4,326 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
+    <title>Badminton Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="shortcut icon" href="image/logo.png"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class = "main">
-        <div class = "div_button">
-            <form>
-                <input type="text" id = "Screen">
-                <input type="button" class = "button" value = "C" onclick = "clr()">
-            </form>
-            <form>
-                <input type="button" class = "button" value = "7" onclick = "Onclick('7')">
-                <input type="button" class = "button" value = "8" onclick = "Onclick('8')">
-                <input type="button" class = "button" value = "9" onclick = "Onclick('9')">
-                <input type="button" class = "button" value = "/" onclick = "Onclick('/')">
-            </form>
-            <form>
-                <input type="button" class = "button" value = "4" onclick = "Onclick('4')">
-                <input type="button" class = "button" value = "5" onclick = "Onclick('5')">
-                <input type="button" class = "button" value = "6" onclick = "Onclick('6')">
-                <input type="button" class = "button" value = "*" onclick = "Onclick('*')">
-            </form>
-            <form>
-                <input type="button" class = "button" value = "1" onclick = "Onclick('1')">
-                <input type="button" class = "button" value = "2" onclick = "Onclick('2')">
-                <input type="button" class = "button" value = "3" onclick = "Onclick('3')">
-                <input type="button" class = "button" value = "-" onclick = "Onclick('-')">
-            </form>
-            <form>
-                <input type="button" class = "button" value = "0" onclick = "Onclick('0')">
-                <input type="button" class = "button" value = "." onclick = "Onclick('.')">
-                <input type="button" class = "button" value = "=" onclick = "Calculate()">
-                <input type="button" class = "button" value = "+" onclick = "Onclick('+')">
-            </form>
+    <section>
+        <!-- Header -->
+        <nav>
+            <div class="logo">
+                <h1>Badminton Sho<span>p</span></h1>
+            </div>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Products">Products</a></li>
+                <li><a href="#Login">Login</a></li>
+                <li><a href="#footer">Adress</a></li>
+            </ul>
+            <div class="icons">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </nav>
+        <!-- Poster -->
+        <img id='Home' class="Poster"
+         src="image/pos.jpg" alt="">
+        
+
+    <!--Products-->
+    <div class="products" id="Products">
+        <h1>Products</h1>
+        <div class="box">
+            <div class="card">
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+                <div class="image">
+                    <img src="image/b1.png">
+                </div>
+                <div class="products_text">
+                    <h2>Yonex Astrox</h2>
+                    <p>
+                        Mang vào tăng tốc độ đánh 
+                    </p>
+                    <h3>3.200.200</h3>
+                    <div class="products_star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">Add To Cart</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+                <div class="image">
+                    <img src="image/b2.png">
+                </div>
+                <div class="products_text">
+                    <h2>Bộ Vợt Cầu Lông</h2>
+                    <p>
+                       Giá rẻ, chất lượng
+                    </p>
+                    <h3>300.000VND</h3>
+                    <div class="products_star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="btn">Add To Cart</a>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+
+                <div class="image">
+                    <img src="image/b3.png">
+                </div>
+
+                <div class="products_text">
+                    <h2>Áo Yonex</h2>
+                    <p>
+                        Đẹp, giá rẻ, tăng 10 độ tự tin
+                    </p>
+                    <h3>150.000VND</h3>
+                    <div class="products_star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">Add To Cart</a>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+
+                <div class="image">
+                    <img src="image/b4.png">
+                </div>
+
+                <div class="products_text">
+                    <h2>Áo Yonex</h2>
+                    <p>
+                        Chất lượng, hiện đại
+                    </p>
+                    <h3>130.000VND</h3>
+                    <div class="products_star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">Add To Cart</a>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+
+                <div class="image">
+                    <img src="image/b5.png">
+                </div>
+
+                <div class="products_text">
+                    <h2>LI-NING AIR-FORCE G2 </h2>
+                    <p>
+                        Tăng độ bền khi va chạm
+                    </p>
+                    <h3>1.100.000VND</h3>
+                    <div class="products_star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">Add To Cart</a>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+
+                <div class="image">
+                    <img src="image/b6.png">
+                </div>
+
+                <div class="products_text">
+                    <h2>Bộ Vợt Trẻ em</h2>
+                    <p>
+                        Vợt cầu lông cho trẻ em đúng-chuẩn và những dòng vợt tốt nhất 
+                    </p>
+                    <h3>400.000VND</h3>
+                    <div class="products_star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="btn">Add To Cart</a>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+
+                <div class="image">
+                    <img src="image/shoes.png">
+                </div>
+
+                <div class="products_text">
+                    <h2>NIKE</h2>
+                    <p>
+                        Tăng tốc chạy, mở nội tại tốc hành 
+                    </p>
+                    <h3>800.000VND</h3>
+                    <div class="products_star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">Add To Cart</a>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+
+                <div class="image">
+                    <img src="image/b7.png">
+                </div>
+
+                <div class="products_text">
+                    <h2>Branded Badminton Racket</h2>
+                    <p>
+                        Tăng độ chính xác
+                    </p>
+                    <h3>600.000VND</h3>
+                    <div class="products_star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="btn">Add To Cart</a>
+                </div>
+
+            </div>
+
         </div>
     </div>
+
+
+
+    <!--Login Form-->
+    <div class="login_form" id="Login">
+        <div class="right">
+            <h1>Welcome Back!</h1>
+            <form>
+                <p>User Name</p>
+                <div class="user">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" name="user" placeholder="User Name" class="username">
+                </div>
+                <p class="passworg_tag">Password</p>
+                <div class="password">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="text" name="password" placeholder="Password">
+                </div>
+
+                <p class="forget">Forget Password ?</p>
+
+                <button type="submit">Login</button>
+                <div class="loging_icon">
+                    <a href="#"><img src="image/google.png"></a>
+                    <a href="#"><img src="image/facebook.png"></a>
+                    <a href="#"><img src="image/twitter.png"></a>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+
+    <!--Footer-->
+    <footer id="footer">
+        <div class="footer_main">
+            <div class="tag">
+                <h1>Contact</h1>
+                <a href="#"><i class="fa-solid fa-house"></i>NQD/12A1/N3</a>
+                <a href="#"><i class="fa-solid fa-phone"></i>333333333</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i>Nhom3@gmail.com</a>
+            </div>
+            <div class="tag">
+                <h1>Follw Us</h1>
+                <div class="social_link">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>                    
+                </div>
+            </div>
+
+            <div class="tag">
+                <h1>New Commments</h1>
+                <div class="search_bar">
+                    <input type="text" placeholder="Phản hồi">
+                    <button type="submit">Click Me</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </section>
 </body>
 </html>
